@@ -10,7 +10,7 @@
 
 .background{
     position: relative;
-    background-image: url("/assets/img/ovo.jpg");
+    background-image: url("./ovo.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -101,3 +101,82 @@ ul li a:hover{
     letter-spacing: 2px;
     transition: 0.3s all;
 }
+
+#section-cuca{
+    background-color: #857F76;
+    display: flex;
+    padding: 6rem;
+}  
+
+#section2-cuca{
+    background-color: #fff;
+    border-radius: 1rem;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    align-items: center;
+}
+    
+
+#p-cuca {
+    font-size: 1.6rem;
+    margin-top: .5rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#secao-receitas{
+    height: 100vh;
+    /*background-color: #8b1010;*/
+    background-color: #857F76;
+}
+
+
+#secao-receitas ul{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+#secao-receitas li{
+    list-style: none;
+}
+
+.cards{
+    max-width: 18.75rem;
+    height: 26.25rem;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.cards:hover .card-text{
+    opacity: 1;
+    align-items: center;
+}
+
+.cards:hover .image-receitas{
+    opacity: .3;
+}
+
+.image-receitas{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden; 
+}
+
+.card-text{
+    color: #FDFDFD;
+    position: absolute;
+    font-size: 1.3rem;
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-40%, -40%);
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+   
