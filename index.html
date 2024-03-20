@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Cucas Kitchen</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./assets/img/style.css'>
-    <script src='main.js'></script>
 </head>
 <body>
 
@@ -26,7 +24,7 @@
             <ul class="links">
                 <li><a href="#">Início</a></li>
                 <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Receitas</a></li>
+                <li><a href="#section2-cuca">Receitas</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
         </header>
@@ -37,7 +35,7 @@
             </div>
             <br>
             <p>Aprenda hoje a fazer sua receita favorita!</p>
-            <button>Saiba Mais</button>
+            <a href="#section2-cuca"><button>Saiba Mais</button></a>
         </div>
     </div>
 
@@ -55,8 +53,6 @@
         
     </section>
 
-
-
     <section id="secao-receitas">
         <ul>
             <li>
@@ -64,12 +60,9 @@
                     <div class="image-receitas">
                         <img src="./assets/img/carnes.png">
                     </div>
-    
-    
                     <div class="card-text">
-                        <h2>Receitas</h2>
+                        <h2>Carnes</h2>
                         <p>Explore Nossas Deliciosas Receitas com Carnes</p>
-                        
                     </div>
                 </div>
             </li>
@@ -78,12 +71,9 @@
                     <div class="image-receitas">
                         <img src="./assets/img/massas.png">
                     </div>
-    
-    
                     <div class="card-text">
                         <h2>Massas</h2>
                         <p>Desfrute da Versatilidade das Massas</p>
-                        
                     </div>
                 </div>
             </li>
@@ -92,11 +82,9 @@
                     <div class="image-receitas">
                         <img src="./assets/img/doces.png">
                     </div>
-    
                     <div class="card-text">
                         <h2>Doces</h2>
                         <p> Nossas Irresistíveis Receitas de Doces</p>
-                        
                     </div>
                 </div>
             </li> 
@@ -124,8 +112,16 @@
             </div>
             
             <div class="campo linha">
-                <label for="paginas">Acompanhamento</label>
-                <input type ="text" id="acompanhamento">
+                <label for="acompanhamento">Acompanhamento</label>
+                <select id="acompanhamento" name="acompanhamento">
+                    <option value="legumes"></option>
+                    <option value="legumes">Ovos</option>
+                    <option value="arroz">Arroz</option>
+                    <option value="batatas">Batatas</option>
+                    <option value="salada">Salada</option>
+                    <option value="legumes">Legumes</option>
+                    
+                </select>
             </div>
 
 
@@ -139,6 +135,9 @@
                 <input name="opcao" type="radio" id="opcao_nao">
                 <label for="opcao_nao">não, já sei</label>
             </div>
+
+            <a href="#"></a>
+            <button class="botao-receita" >Ver Receita</button></a>
 
         </form>
 
