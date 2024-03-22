@@ -9,6 +9,7 @@
     <title>Cucas Kitchen</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./assets/img/style.css'>
+    <script src="./assets/img/script/script.js" defer></script>
 </head>
 <body>
 
@@ -17,7 +18,7 @@
         <header>
             <div class="logo">
                 <a href="#">
-                    <img src="./assets/img/CUCA`S KITCHEN (2).png" alt="logo site">
+                    <img src="assets/img/CUCA`S KITCHEN (2).png" alt="logo site">
                 </a>
             </div>
 
@@ -42,7 +43,7 @@
     <section id="section-cuca">
 
         <div id="section2-cuca">
-            <img  src= "./assets/img/Ellipse 3.png" alt="">
+            <img src="./assets/img/Ellipse 3.png" alt="">
 
             <div>
                 <h2>RECEITAS PARA QUEM AMA COZINHAR!</h2>
@@ -84,7 +85,7 @@
                     </div>
                     <div class="card-text">
                         <h2>Doces</h2>
-                        <p> Nossas Irresistíveis Receitas de Doces</p>
+                        <p>Nossas Irresistíveis Receitas de Doces</p>
                     </div>
                 </div>
             </li> 
@@ -95,32 +96,31 @@
     <section id="secao-opcoesreceita">
 
         <div class="sec">
-            <h1> Tá em duvida do que comer?</h1>
+            <h1> Tá em dúvida do que comer?</h1>
             <h3>A gente escolhe por você!</h3>
         </div>
 
-        <form action ="">
+        <form action="">
             <div class="campo linha">
                 <label for="nome">Ingrediente Principal</label>
             </div>
 
             <div>
-                <input name="prototipo" type="radio" id="prototipo_sim">
+                <input name="prototipoCarne" type="radio" id="prototipo_sim">
                 <label for="prototipo_sim">Carne</label>
-                <input name="prototipo" type="radio" id="prototipo_nao">
+                <input name="prototipoMassa" type="radio" id="prototipo_nao">
                 <label for="prototipo_nao">Massa</label>
             </div>
             
             <div class="campo linha">
                 <label for="acompanhamento">Acompanhamento</label>
                 <select id="acompanhamento" name="acompanhamento">
-                    <option value="legumes"></option>
-                    <option value="legumes">Ovos</option>
-                    <option value="arroz">Arroz</option>
-                    <option value="batatas">Batatas</option>
-                    <option value="salada">Salada</option>
-                    <option value="legumes">Legumes</option>
-                    
+                    <option value=""></option>
+                    <option value="0">Ovos</option>
+                    <option value="1">Arroz</option>
+                    <option value="2">Batatas</option>
+                    <option value="3">Salada</option>
+                    <option value="4">Legumes</option>
                 </select>
             </div>
 
@@ -131,17 +131,15 @@
 
             <div class="linha">
                 <input name="opcao" type="radio" id="opcao_sim">
-                <label for="opcao_sim">sim, quero</label>
+                <label for="opcao_sim">Sim, quero</label>
                 <input name="opcao" type="radio" id="opcao_nao">
-                <label for="opcao_nao">não, já sei</label>
+                <label for="opcao_nao">Não, já sei</label>
             </div>
-
-            <a href="#"></a>
-            <button class="botao-receita" >Ver Receita</button></a>
-
         </form>
 
-    </section>
+        <button onclick="verVideo()" class="botao-receita">Ver Receita</button>
 
+    </section>
+    
 </body>
 </html>
