@@ -189,7 +189,7 @@ ul li a:hover {
 }
 
 .linha {
-    grid-column: 1/3;
+    grid-column: span 2;
 }
 
 input[type=text],
